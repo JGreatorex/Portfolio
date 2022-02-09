@@ -1,0 +1,73 @@
+@import 'variables';
+
+#main-content {
+
+    .main-wrapper {
+        background-color: $white;
+        width: 70%;
+        margin: 0 auto;
+        padding: 40px;
+
+        @include bp-sm {
+            width: 90%;
+        }
+
+        @include bp-md {
+            width: 600px;
+        }
+
+        @include bp-lg {
+            width: 912px;
+        }
+
+    }
+
+    .text-left-image-right {
+        display: flex;
+        flex-direction: column-reverse;
+
+        @include bp-sm {
+            flex-direction: row;
+        }
+
+        .text {
+            flex-basis: 100%;
+            margin-right: 0;
+
+            @include bp-sm {
+                flex-basis: 67%;
+                margin-right: 25px;
+            }
+
+            ul li {
+                margin-bottom: 10px;
+            }
+        }
+
+        .image {
+            flex-basis: 100%;
+
+            @include bp-sm {
+                flex-basis: 33%;
+                margin-left: 25px;
+            }
+
+            img {
+                width: 200px;
+                margin: 0 auto;
+                display: block;
+                margin-bottom: 30px;
+
+                @include bp-sm {
+                    margin-bottom: 0;
+                    width: 100%;
+                }
+            
+            }
+        }
+    }
+}
+
+footer p {
+    font-size: 10px;
+}

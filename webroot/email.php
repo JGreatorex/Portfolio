@@ -2,7 +2,7 @@
 	if(!empty($_POST['name'])){
 		if(!empty($_POST['email'])){
 			if(!empty($_POST['message'])){
-			    if (intval($_POST['excercise']) == 25) {
+			    if (intval($_POST['surname']) == 25) {
                     $to = "jamie.greatorex99@gmail.com";
                     $subject = "jgreatorex.com || Website contact";
                     $htmlStart = "<html><head><style>*{font-family: sans-serif;}</style></head><body>";

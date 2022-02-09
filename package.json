@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "1.0.1",
+  "description": "Serpex Portfolio ========= Designs by Joshua Serpis, built by Jamie Greatorex ## Using Lando 1. Install [Lando](https://lando.dev/) 2. From the repo root run `lando start` 3. Lando will spin up a new docker image for you and give you the URL in terminal!",
+  "main": "gulpfile.js",
+  "scripts": {
+    "sass": "gulp sass:watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Serpex-studio/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Serpex-studio/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Serpex-studio/Portfolio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^6.0.0"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.0",
+    "sass": "^1.35.1"
+  }
+}

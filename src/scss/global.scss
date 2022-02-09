@@ -1,0 +1,26 @@
+@import 'variables';
+body {
+    background-color: $background;
+}
+
+*, p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+hr {
+    border-style: solid;
+    margin-bottom: 35px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
