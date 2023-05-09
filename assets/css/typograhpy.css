@@ -102,6 +102,20 @@ ul li::before {
     content: '\2666';
 }
 
+strong {
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: var(--brandColour);
+    color: var(--white);
+}
+
+.invert a:hover {
+    background-color: var(--white);
+    color: var(--brandColour);
+}
+
 @media (max-width: 300px) {
     h1 {
         font-size: 2rem;
