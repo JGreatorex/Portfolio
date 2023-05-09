@@ -1,0 +1,9 @@
+nav#main-nav {
+    background-color: var(--brandColour);
+    padding: 0.5rem 2rem;
+}
+
+nav#main-nav a {
+    color: var(--white);
+    text-decoration: none;
+}

@@ -1,0 +1,42 @@
+header {
+    background-color: var(--brandColour);
+    background-image: linear-gradient(var(--brandLight), var(--brandColour));
+    width: 100%;
+    height: 75vh;
+    position: relative;
+}
+
+header canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    margin-bottom: 2rem;
+    text-transform: none;
+}
+
+header h1, header h1 span {
+    color: var(--white);
+    font-size: 4rem;
+}
+
+header a, header a:visited, header a:active {
+    color: var(--white);
+}
+
+header .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+header .socials .social {
+    font-size: 2rem;
+    padding: 1rem;
+}

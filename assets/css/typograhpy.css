@@ -1,0 +1,64 @@
+h1, h2, h3, h4, h5, h6, p, img, a, span, div {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 2rem;
+    font-weight: 700;
+    color: var(--brandColour);
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/* Heading underline */
+h2, h3, h4, h5, h6 {
+    position: relative;
+}
+
+h2::after, h3::after, h4::after, h5::after, h6::after {
+    position: absolute;
+    content: "";
+    width: 33%;
+    height: 0.1rem;
+    background-color: var(--brandColour);
+    bottom: -0.1rem;
+    left: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    position: relative;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p, span, img, a {
+    font-size: 1rem;
+    color: var(--text);
+}
+
+p {
+    margin-bottom: 1rem;
+}
