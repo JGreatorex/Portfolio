@@ -10,3 +10,10 @@ nav#main-nav a {
     color: var(--white);
     text-decoration: none;
 }
+
+@media (max-width: 414px) {
+    nav#main-nav a {
+        font-size:  0.75rem;
+        padding: 0 0.25rem;
+    }
+}

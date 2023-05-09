@@ -15,11 +15,13 @@ header canvas {
 header h1 {
     margin-bottom: 2rem;
     text-transform: none;
+    padding: 0 1rem;
 }
 
 header h1, header h1 span {
     color: var(--white);
     font-size: 4rem;
+    text-align: center;
 }
 
 header a, header a:visited, header a:active {
@@ -39,4 +41,36 @@ header .header-container {
 header .socials .social {
     font-size: 2rem;
     padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    header h1, header h1 span {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 414px) {
+    header {
+        height: 30vh;
+    }
+    header h1, header h1 span {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    header .socials .social {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 300px) {
+
+    header {
+        height: 40vh;
+    }
+
+    header h1, header h1 span {
+        font-size: 1.5rem;
+    }
 }

@@ -47,7 +47,6 @@ h1 {
 
 h2 {
     font-size: 1.8rem;
-    position: relative;
 }
 
 h3 {
@@ -101,4 +100,36 @@ ul li::before {
     left: -1rem;
     width: 1rem;
     content: '\2666';
+}
+
+@media (max-width: 300px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    p, span, img, a, li {
+        font-size: 0.8rem;
+    }
+
 }
