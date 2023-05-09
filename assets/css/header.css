@@ -2,7 +2,7 @@ header {
     background-color: var(--brandColour);
     background-image: linear-gradient(var(--brandLight), var(--brandColour));
     width: 100%;
-    height: 75vh;
+    height: 60vh;
     position: relative;
 }
 
@@ -39,4 +39,17 @@ header .header-container {
 header .socials .social {
     font-size: 2rem;
     padding: 1rem;
+}
+
+ul li {
+    margin-left: 1rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+
+ul li::before {
+    position: absolute;
+    left: -1rem;
+    width: 1rem;
+    content: '\2666';
 }

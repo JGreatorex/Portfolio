@@ -1,6 +1,9 @@
 nav#main-nav {
     background-color: var(--brandColour);
     padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav#main-nav a {

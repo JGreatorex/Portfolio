@@ -10,11 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"
     <script src="https://kit.fontawesome.com/232703895c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav id="main-nav">
-        <a href="#about">ABOUT</a>
+        <a href="#about">About</a>
+        <a href="#abilities">Abilities</a>
+        <a href="#projects">Projects</a>
     </nav>
     <header id="site-header">
         <div class="header-container">
@@ -29,11 +32,74 @@
     </header>
     <main>
         <section id="about">
-            <div class="container">
+            <div class="container container-pa">
                 <h2>About me</h2>
-                <p>Hi! My name is Jamie, I am a full time backend Drupal engineer currently situated in Wiltshire.</p>
+                <p>Hi! My name is Jamie, I am a full time backend Drupal Developer currently situated in Wiltshire.</p>
                 <p>I've been interested in web design & development since early 2014 with my interest sparked with Adobe Dreamweaver. To further my knowledge and abilities, throughout my education I have followed a tech interest starting with taking IT as a GCSE in secondary school, to taking Digital Media (BSc) at the University of the West of England where I did my first year.</p>
                 <p>In 2017 I started employment at Coherence Digital as a HTML Email developer. During my time there I had also used my PHP knowledge to upskill in an Acquia certified Drupal 9 Site-builder and developer. I have also gained an Acquia Certification for a Acquia Site studio site builder. You can find my qualifications in Acquia's <a href="https://certification.acquia.com/?fname=Jamie&lname=Greatorex&exam=All" target="_blank">certification registry</a>.</p>
+            </div>
+        </section>
+        <section id="abilities" class="invert">
+            <div class="container container-pa">
+                <h2>Ability</h2><br/>
+                <h3>Drupal</h3>
+                <p>As stated in my introduction, I started at Coherence as a HTML Developer - Progressing my way to an Acquia Certified Drupal Developer.</p>
+                <p>During my time there, I have up-skilled and grown to love the Drupal CMS. Within my role, I would produce and maintain custom Drupal modules, create and edit themes, perform Drupal updates / upgrades and continually maintain active sites.</p>
+                <h4>Skills</h4>
+                <ul>
+                    <li>Drupal 8 / 9</li>
+                    <li>Custom module development</li>
+                    <li>Custom Theme development</li>
+                    <li>Symfony experience</li>
+                    <li>PHP</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript / jQuery</li>
+                    <li>Twig</li>
+                </ul>
+                <h3>HTML Email Development</h3>
+                <p>Starting out at Coherence Digital, I was bought on with the job title of HTML Developer. My main responsibility was producing responsive and compatible marketing email templates. I had to ensure these emails would work across a variety of devices and email clients.</p>
+                <h4>Skills</h4>
+                <ul>
+                    <li>Responsive Email templates</li>
+                    <li>Support for Microsoft Outlook 2002-2016</li>
+                    <li>Support for Gmail</li>
+                    <li>Support for Apple Mail</li>
+                    <li>Litmus testing</li>
+                    <li>Mailchimp</li>
+                    <li>Sendgrid</li>
+                    <li>Hubspot</li>
+                    <li>DotDigital</li>
+                </ul>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container container-pa">
+                <h2>Projects</h2>
+                <p>Here you can find some personal projects I have done as a showcase of my experience.</p>
+                <h3>LoopGens</h3><br/>
+                <h4>Website</h4>
+                <div class="row-tl-ir">
+                    <div class="col-1">
+                        <p>LoopGens is a minecraft community and server founded over 2 years ago. Since then, it has had over 10,000 unique joins. To expand my knowledge and for some practice, I decided to create a website for this community. I initially did a small site using basic HTML, CSS and JavaScript. You can see an archived version of the original site
+                            <a href="https://web.archive.org/web/20220714101620/http://www.loopgens.com/" target="_blank">here</a>. It contained the most recent news piece and the staff who run the server. Launched July 14th 2022.</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="/assets/img/loopgens-logo-web.png" alt="LoopGens Logo" class="responsive-img">
+                    </div>
+                </div>
+                <p>With the original site, I found maintaining the site difficult as everything was managed in pure code. Updating content meant me changing the HTML code and CSS styling manually then uploading it to the web server. On top of that, only I was able to edit content. With that in mind, I re-created the site in the Drupal CMS so others could collaborate on the site and help keep the content updated and relevant.</p>
+                <p>Come July 18th (Just 4 days after the initial website launch), I had remade the site using Drupal. With this project, I had to keep collaboration and ease of editing content in mind. For this reason, I chose to use the
+                    <a href="https://www.drupal.org/project/paragraphs" target="_blank">paragraphs</a> module to build the site. This module allowed me to add options to components which then in turn let the web team update and customise content to their liking. With access to drag and drop components, edit text and styling - it accelerated the update process heavily.</p>
+                <p>Check out LoopGens at <a href="https://www.loopgens.com" target="_blank">www.loopgens.com</a></p>
+                <h4>Tebex Giftcard Integration</h4>
+                <p>Within the server, players were able to obtain Gift-cards which they could use on the server's store which runs on a platform called
+                    <a href="https://tebex.io" target="_blank">Tebex</a> (Previously called BuyCraft). Prior to my custom Java plugin, users would claim their gift card which would put a log in console and post a message in an Admin only discord channel alerting the staff to the redemption. The user would then have to go into the Discord and open a ticket to claim a gift-card code to be used in the store.</p>
+                <p>This process was obviously long and laborious for both the end user and the staff. As a solution to this issue, I decided to make a custom Spigot plugin (Spigot is a Minecraft Server API) which allowed users to consume the in game gift-cards which would then be stored in a player 'bank'. This balance could then be withdrawn at any time with a custom amount by the user. Utilising Telex's API, I then would have the plugin make an API call to Tebex to generate the gift-card number and return it to the user.</p>
+                <p>This new plugin made the experience for everyone much nicer and allowed users to instantly claim a code and freed up staff to focus on more pressing matters</p>
+                <h3>Webform DENC</h3>
+                <p>Webform DENC is an open-source Drupal module I am currently planning. It's intended to be used as a webform handler which will allow the encoding/decoding of data using encoding schemes such as Base64.</p>
+                <p>It will allow the user to select which fields this should apply to on a webform and which encoding/decoding method should be used.</p>
             </div>
         </section>
     </main>

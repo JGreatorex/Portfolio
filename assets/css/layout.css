@@ -1,5 +1,30 @@
 .container {
-    max-width: 60%;
+    max-width: 45%;
     margin: 0 auto;
+}
+
+.container-pa {
     padding: 4rem 2rem;
+}
+
+.invert {
+    background-color: var(--brandColour);
+}
+
+.row-tl-ir {
+    display: flex;
+    align-items: center;
+}
+
+.row-tl-ir .col-1 {
+    width: 75%;
+}
+
+.row-tl-ir .col-2 {
+    width: 25%;
+}
+
+img.responsive-img {
+    width: 100%;
+    height: auto;
 }
