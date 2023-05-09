@@ -4,6 +4,8 @@ nav#main-nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 nav#main-nav a {
