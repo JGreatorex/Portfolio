@@ -2,3 +2,15 @@ footer p {
     margin-bottom: 0;
     text-align: right;
 }
+
+@media (max-width: 300px) {
+    footer p {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 414px) {
+    footer p {
+        font-size: 0.5rem;
+    }
+}

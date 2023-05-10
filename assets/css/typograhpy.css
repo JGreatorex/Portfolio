@@ -90,16 +90,16 @@ ul.plain li::before {
 }
 
 ul li {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     padding-bottom: 0.5rem;
     position: relative;
 }
 
 ul li::before {
     position: absolute;
-    left: -1rem;
+    left: -1.5rem;
     width: 1rem;
-    content: '\2666';
+    content: '\027A4';
 }
 
 strong {
